@@ -41,10 +41,10 @@ brickInfo = {
 
 // Create bricls
 bricks = []
-for (let i = 0; i < breakRowCount; i++) {
+for (let i = 0; i < brickRowCount; i++) {
     bricks[i] = []
     for (let j = 0; j < brickColumCount; j++) {
-        const x = i * (breakInfo.w + brickInfo.padding) + breakInfo.offsetX
+        const x = i * (brickInfo.w + brickInfo.padding) + brickInfo.offsetX
         const y = j * (brickInfo.h + brickInfo.padding) + brickInfo.offsetY
         bricks[i][j] = {x, y, ...brickInfo}
     }
