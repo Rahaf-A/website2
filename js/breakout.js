@@ -41,7 +41,7 @@ brickInfo = {
 
 // Create bricls
 bricks = []
-for (let i = 0; i < breakRowCount i++) {
+for (let i = 0; i < breakRowCount; i++) {
     bricks[i] = []
     for (let j = 0; j < brickColumCount; j++) {
         const x = i * (breakInfo.w + brickInfo.padding) + breakInfo.offsetX
@@ -82,8 +82,8 @@ function drawBricks() {
         column.forEach(brick => {
             ctx.beginPath()
             vtx.rect(brick.x, brick.y, brick.w, brick.h)
-            ctx.fillStyle = '#0095dd'
-            ctx.fill
+            ctx.fillStyle = brick.visible ? '#0095dd' : 'transparent';
+            ctx.fill()
             ctx.closePath()
         })
     })
