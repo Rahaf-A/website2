@@ -59,7 +59,6 @@ function drawBall() {
     ctx.closePath()
 }
 
-
 // Draw paddle on canvas
 function drawPaddle() {
     ctx.beginPath()
@@ -70,8 +69,6 @@ function drawPaddle() {
 }
 
 
-
-
 // Draw score on canvas
 function drawScore() {
     ctx.font = '20px Arial'
@@ -79,8 +76,18 @@ function drawScore() {
 }
 
 
-//Create Bricks
-
+// Draw bricks on canvas
+function drawBricks() {
+    bricks.forEach(column => {
+        column.forEach(brick => {
+            ctx.beginPath()
+            vtx.rect(brick.x, brick.y, brick.w, brick.h)
+            ctx.fillStyle = '#0095dd'
+            ctx.fill
+            ctx.closePath()
+        })
+    })
+}
 
 // Draw everything
 function draw(){
