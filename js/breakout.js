@@ -89,6 +89,8 @@ function drawBricks() {
     })
 }
 
+console.log
+
 // Draw everything
 function draw(){
     drawPaddle()
