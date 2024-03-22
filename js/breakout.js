@@ -9,7 +9,6 @@ score = 0
 brickRowCount = 9
 brickColumnCount = 5
 
-
 // Create ball properties
 ball = {
     x: canvas.width / 2,
@@ -20,7 +19,6 @@ ball = {
     dy: -4,
 }
 
-
 // Create Paddle properties
 paddle = {
     x: canvas.wedith / 2 - 40,
@@ -30,7 +28,6 @@ paddle = {
     speed: 8,
     dx: 0,
 }
-
 
 //Create brick properties
 brickInfo = {
@@ -44,7 +41,14 @@ brickInfo = {
 
 // Create bricls
 bricks = []
-for (let i)
+for (let i = 0; i < breakRowCount i++) {
+    bricks[i] = []
+    for (let j = 0; j < brickColumCount; j++) {
+        const x = i * (breakInfo.w + brickInfo.padding) + breakInfo.offsetX
+        const y = j * (brickInfo.h + brickInfo.padding) + brickInfo.offsetY
+        bricks[i][j] = {x, y, ...brickInfo}
+    }
+}
 
 // Draw ball on canvas
 function drawBall() {
