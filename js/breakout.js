@@ -100,8 +100,14 @@ function draw(){
 }
 
 
-draw()
+// Update canvas drawing and animation
+function update() {
+    movePaddle()
+    draw()
+    requestAnnimationFrame(update)
+}
 
+update()
 
 // Rules open and close event handles
 rulesBtn.addEventListener('click', () => {
