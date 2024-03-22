@@ -1,13 +1,10 @@
 ruleBtb = document.getElementById('rules-btn')
 rules = document.getElementById('rules')
 closeBtn = document.getElementById('close-btn')
-
-
+canvas = document.getElementById('canvas')
 ctx = canvas_getContext('2d')
 
-
 score = 0
-
 
 brickRowCount = 9
 brickColumnCount = 5
@@ -45,6 +42,9 @@ brickInfo = {
     visible: true,
 }
 
+// Create bricls
+bricks = []
+for (let i)
 
 // Draw ball on canvas
 function drawBall() {
