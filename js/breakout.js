@@ -94,6 +94,7 @@ function draw(){
     drawPaddle()
     drawBall()
     drawScore()
+    drawBricks()
 }
 
 
