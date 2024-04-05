@@ -61,6 +61,6 @@ h1 {
     transition: transform 1s ease-in-out;
 }
 
-.rule.active {
+.rule.show {
     transform: translateX(0);
 }
