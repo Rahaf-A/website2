@@ -10,22 +10,16 @@ body {
     font-family: "Press Start 2P", system-ui;
     height: 100vh;
     overflow: hidden;
+    margin: 0;
     text-align: center;
 }
 
-.choose-insect-btn img {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
+a {
+    color: #fff;
 }
 
-.screen {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: margin 0.5s ease-in;
+h1{
+    line-height: 1.4;
 }
 
 .btn {
@@ -41,17 +35,22 @@ body {
     opacity: 0.9;
 }
 
+.btn:focus {
+    outline: 0;
+}
+
+.screen {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: margin 0.5s ease-in;
+}
 
 .screen.up {
     margin-top: -100vh;
-}
-
-a {
-    color: white;
-}
-
-h1{
-    line-height: 1.4;
 }
 
 .insects-list {
@@ -68,8 +67,8 @@ h1{
 
 .choose-insect-btn {
     background-color: transparent;
-    border: 2px solid #ffffff;
-    color: #ffffff;
+    border: 2px solid #fff;
+    color: #fff;
     cursor: pointer;
     font-family: inherit;
     width: 150px;
@@ -85,20 +84,27 @@ h1{
     background-color: rgba(255, 255, 255, 0.7);
 }
 
+.choose-insect-btn img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
 
 .gamer-container {
     position: relative;
 }
 
-.time {
+.time,
+.score {
     position: absolute;
     top: 20px;
+}
+
+.time {
     left: 20px;
 }
 
 .score {
-    position: absolute;
-    top: 20px;
     right: 20px;
 }
 
