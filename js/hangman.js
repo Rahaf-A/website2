@@ -68,6 +68,8 @@ function showNotification() {
     }, 2000)
 }
 
+
+
 // Keydown letter press
 window.addEventListener('keydown', e => {
 
@@ -92,6 +94,22 @@ window.addEventListener('keydown', e => {
             }
         }
     }
+})
+
+// Restart game and play again
+playAgainBtn.addEventListener('click', () => {
+    correctLetter.length = 0
+    wrongLetters.length = 0
+
+    selectedIndex = Math.floor(word.length * Math.random())
+    selectedWord = word[selectedIndex]
+
+    displayWord()
+
+    updateWrongLetterEl()
+
+    popup.style.display = 'none'
+
 })
 
 
