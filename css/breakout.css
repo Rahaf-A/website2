@@ -1,40 +1,49 @@
-* {
-    box-sizing: border-box;
+:root {
+    --background-color: #E80000; /* Light Red */
+    --text-color: #ffffff;
+    --button-background: #a20404;
+    --button-color: #ffffff;
+    --button-hover: #FF7D7D;
+    --canvas-background: #f0f0f0;
+    --ball-color: #FF7D7D;
+    --paddle-color: #DC2020;
+    --brick-color: #FF1515;
+    --rules-background: #FF7D7D;
 }
 
 body {
-    background-color: #E80000;
+    background-color: var(--background-color);
+    color: var(--text-color);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     margin: 0;
-    font-family: Arial. Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 canvas {
-    background: #f0f0f0;
+    background: var(--canvas-background);
     display: block;
     border-radius: 5px;
 }
 
 h1 {
     font-size: 45px;
-    color: #ffffff;
 }
 
 .btn {
     cursor: pointer;
     border: 0;
     padding: 10px 20px;
-    background: #000000;
-    color: #ffffff;
+    background: var(--button-background);
+    color: var(--button-color);
     border-radius: 5px;
 }
 
 .btn:hover {
-    background: #FF7D7D;
+    background: var(--button-hover);
 }
 
 .btn:active {
@@ -47,21 +56,27 @@ h1 {
     left: 30px;
 }
 
+.theme-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
 .rules {
     position: absolute;
     top: 0;
     left: 0;
-    background: #FF7D7D;
-    color: #ffffff;
+    background: var(--rules-background);
+    color: var(--text-color);
     min-height: 100vh;
-    width: 400px;
-    padding: 20px;
+    width: 360px;
+    padding: 10px;
     line-height: 1.5;
     transform: translateX(-400px);
     transition: transform 1s ease-in-out;
 }
 
-.rule.show {
+.rules.show {
     transform: translateX(0);
 }
 
@@ -77,4 +92,17 @@ h1 {
 
 .screen.up {
     margin-top: -100vh;
+}
+
+body.dark-theme {
+    --background-color: #420000; /* Dark Red */
+    --text-color: #ffffff;
+    --button-background: #2e0000;
+    --button-color: #ffffff;
+    --button-hover: #FF3333;
+    --canvas-background: #600000;
+    --ball-color: #aa1f1f;
+    --paddle-color: #aa1f1f;
+    --brick-color: #aa1f1f;
+    --rules-background: #901212;
 }
