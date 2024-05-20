@@ -96,7 +96,6 @@ window.addEventListener('keydown', e => {
     }
 });
 
-// restart game, play again
 playAgainBtn.addEventListener('click', () => {
     gameEnded = false;
     correctLetters.length = 0;
