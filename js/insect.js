@@ -81,3 +81,4 @@ function increaseScore() {
     }
     scoreEl.innerHTML = `Score: ${score}`;
 }
+
