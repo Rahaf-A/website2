@@ -1,6 +1,3 @@
-// JavaScript for the insect game
-
-// Wrap all your existing code inside a function
 function setupInsectGame() {
     const startBtn = document.getElementById('start-btn');
     const chooseInsectBtns = document.querySelectorAll('.choose-insect-btn');
