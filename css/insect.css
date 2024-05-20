@@ -149,3 +149,34 @@ h1{
 .insect img {
     width: 100px;
 }
+
+.center-button {
+    position: fixed;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #516dff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.center-button:hover {
+    background-color: #f0f0f0;
+}
+
+.home-link {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.home-link:hover {
+    text-decoration: underline;
+}
