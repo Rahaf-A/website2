@@ -152,12 +152,12 @@ h1{
 
 .center-button {
     position: fixed;
-    bottom: 50%;
+    bottom: 93%;
     left: 50%;
     transform: translate(-50%, 50%);
     padding: 10px 20px;
-    background-color: #fff;
-    color: #516dff;
+    /* background-color: #fff; */
+    color: #fff;
     border: none;
     border-radius: 5px;
     text-decoration: none;
