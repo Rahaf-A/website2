@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website2</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h2>This is my 2nd website!!!</h2>
+    <h2>Welcome to my 2nd website!</h2>
 
-    <a href="breakout.html">Breakout</a>
-    <br>
-    <a href="insect.html">Insect</a>
-    <br>
-    <a href="hangman.html">Hangman</a>
+    <div class="links">
+        <a href="breakout.html" class="link" data-description="Classic arcade game">Breakout</a>
+        <a href="insect.html" class="link" data-description="Catch the insect game">Insect</a>
+        <a href="hangman.html" class="link" data-description="Word guessing game">Hangman</a>
+    </div>
 
+    <div class="description"></div>
 
+    <script src="script.js"></script>
 </body>
 </html>
