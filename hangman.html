@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hangman</title>
     <link rel="stylesheet" href="css/hangman.css">
+    <style>
+        .center-button {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px 20px;
+            background-color: #2980b9;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            z-index: 1000;
+        }
+    </style>
 </head>
 <body>
     <h1>Hangman</h1>
@@ -47,8 +63,9 @@
     <div class="notification-container" id="notification-container">
         <p>You have already entered this letter.</p>
     </div>
+
+    <a href="index.html" class="center-button">Home Page</a>
 </body>
 <script src="js/hangman.js"></script>
-<a href="index.html" class="center-button">Home Page</a>
 
 </html>
