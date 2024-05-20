@@ -1,4 +1,4 @@
-function setupInsectGame() {
+document.addEventListener("DOMContentLoaded", function () {
     const startBtn = document.getElementById('start-btn');
     const chooseInsectBtns = document.querySelectorAll('.choose-insect-btn');
     const screens = document.querySelectorAll('.screen');
@@ -6,6 +6,7 @@ function setupInsectGame() {
     const scoreEl = document.getElementById('score');
     const messageEl = document.getElementById('message');
     const gameContainer = document.getElementById('game-container');
+    const homeLink = document.querySelector('.home-link');
 
     let score = 0;
     let seconds = 0;
@@ -82,6 +83,9 @@ function setupInsectGame() {
         }
         scoreEl.innerHTML = `Score: ${score}`;
     }
-}
 
-setupInsectGame();
+    homeLink.addEventListener('click', (event) => {
+        event.preventDefault();
+        window.location.href = homeLink.href;
+    });
+});
