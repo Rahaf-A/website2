@@ -18,7 +18,7 @@ a {
     color: #fff;
 }
 
-h1 {
+h1{
     line-height: 1.4;
 }
 
@@ -90,7 +90,7 @@ h1 {
     object-fit: contain;
 }
 
-.game-container {
+.gamer-container {
     position: relative;
 }
 
@@ -120,4 +120,32 @@ h1 {
     top: 0;
     left: 50%;
     transform: translate(-50%, -150%);
-    transition: transform }
+    transition: transform 0.4s ease-in;
+}
+
+
+.message.visible {
+    opacity: 1;
+    transform: translate(-50%, 150%);
+}
+
+
+.insect {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.insect.caught {
+    transform: translate(-50%, 50%) scale(0);
+}
+
+.insect img {
+    width: 100px;
+}
